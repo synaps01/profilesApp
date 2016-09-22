@@ -7,7 +7,7 @@ target 'profilesApp' do
 
   # Pods for profilesApp
     pod 'Alamofire', '~> 3.4'
-    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git'
+    pod 'SwiftyJSON', :git => 'https://github.com/SwiftyJSON/SwiftyJSON.git', :branch => 'swift2'
 
   target 'profilesAppTests' do
     inherit! :search_paths
