@@ -15,6 +15,8 @@
 		FA2A52541D949283008BDF26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2A52531D949283008BDF26 /* Assets.xcassets */; };
 		FA2A52571D949283008BDF26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA2A52551D949283008BDF26 /* LaunchScreen.storyboard */; };
 		FA2A52621D949283008BDF26 /* profilesAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2A52611D949283008BDF26 /* profilesAppTests.swift */; };
+		FAAA57291D94A33300E7F555 /* ProfilesAPITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA57281D94A33300E7F555 /* ProfilesAPITest.swift */; };
+		FAAA572E1D94A4E600E7F555 /* ProfilesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAA572D1D94A4E600E7F555 /* ProfilesAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		FA2A525D1D949283008BDF26 /* profilesAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = profilesAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA2A52611D949283008BDF26 /* profilesAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = profilesAppTests.swift; sourceTree = "<group>"; };
 		FA2A52631D949283008BDF26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAAA57281D94A33300E7F555 /* ProfilesAPITest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilesAPITest.swift; sourceTree = "<group>"; };
+		FAAA572D1D94A4E600E7F555 /* ProfilesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilesAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		FA2A524B1D949282008BDF26 /* profilesApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAAA572A1D94A4A100E7F555 /* Services */,
 				FA2A524C1D949283008BDF26 /* AppDelegate.swift */,
 				FA2A524E1D949283008BDF26 /* ViewController.swift */,
 				FA2A52501D949283008BDF26 /* Main.storyboard */,
@@ -122,10 +127,27 @@
 		FA2A52601D949283008BDF26 /* profilesAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				FAAA57271D94A2A900E7F555 /* Services */,
 				FA2A52611D949283008BDF26 /* profilesAppTests.swift */,
 				FA2A52631D949283008BDF26 /* Info.plist */,
 			);
 			path = profilesAppTests;
+			sourceTree = "<group>";
+		};
+		FAAA57271D94A2A900E7F555 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA57281D94A33300E7F555 /* ProfilesAPITest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FAAA572A1D94A4A100E7F555 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FAAA572D1D94A4E600E7F555 /* ProfilesAPI.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,6 +351,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAA572E1D94A4E600E7F555 /* ProfilesAPI.swift in Sources */,
 				FA2A524F1D949283008BDF26 /* ViewController.swift in Sources */,
 				FA2A524D1D949283008BDF26 /* AppDelegate.swift in Sources */,
 			);
@@ -338,6 +361,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAAA57291D94A33300E7F555 /* ProfilesAPITest.swift in Sources */,
 				FA2A52621D949283008BDF26 /* profilesAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
