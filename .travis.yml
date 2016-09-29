@@ -9,8 +9,8 @@ env:
     global:
         - COCOAPODS_DISABLE_DETERMINISTIC_UUIDS=1
     matrix:
-        - MATRIX_TARGET="-scheme GeoFeatures-iOS-Example -sdk iphonesimulator"
-        - MATRIX_TARGET="-scheme GeoFeatures-OSX-Example -sdk macosx"
+        - MATRIX_TARGET="-scheme profilesApp -sdk iphonesimulator"
+        - MATRIX_TARGET="-scheme profilesApp -sdk macosx"
 
 script:
     - set -o pipefail
